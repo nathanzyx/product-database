@@ -13,8 +13,10 @@ from database.DatabaseSystem import *
 class AI:
     def __init__(self, inventory_system):
         self.inventory_system = inventory_system
-        self.api_key_gemini = "AIzaSyChLURtLM1Ldq_hl_6rj3IFB3AQpV-KoKE"
-        self.api_url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={self.api_key_gemini}"
+        # note: api key was hardcoded into the source code for simplicity, since this 
+        # is an academic project and security isn't a concern.
+        self.api_key_gemini = "<>"
+        self.api_url = f"<>"
         # ----------------------------------------
         
     def make_Query(self, user_query):
